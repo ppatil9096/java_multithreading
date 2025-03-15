@@ -41,4 +41,13 @@ public class DeadlockDemo {
         new Thread(deadlockDemo::workerOne, "Worker One").start();
         new Thread(deadlockDemo::workerTwo, "Worker Two").start();
     }
+
+    /*
+    To prevent deadlock
+
+    - Use timeouts
+    - Global ordering of locks
+    - Avoid nesting of locks
+    - Use Thread safe alternatives
+     */
 }
